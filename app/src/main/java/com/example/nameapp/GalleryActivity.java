@@ -16,7 +16,7 @@ public class GalleryActivity extends AppCompatActivity {
             "Sebastian","daniel","fedme",
     };
     private final Integer image_ids[] = {
-            R.drawable.sample1, R.drawable.sample2, R.drawable.sample3,
+            R.drawable.img1, R.drawable.img2, R.drawable.img3,
     };
 
     @Override
