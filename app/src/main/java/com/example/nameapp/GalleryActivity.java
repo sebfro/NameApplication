@@ -2,7 +2,6 @@ package com.example.nameapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.os.Bundle;
 
@@ -19,8 +18,6 @@ public class GalleryActivity extends AppCompatActivity {
     private final Integer image_ids[] = {
             R.drawable.sample1, R.drawable.sample2, R.drawable.sample3,
     };
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
