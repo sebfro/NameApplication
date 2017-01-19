@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -43,11 +44,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     //Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position){
+    public void onBindViewHolder(ViewHolder holder, final int position){
         //get element from your dataset at this position
         // replace the contents of the view with that element
         holder.img.setScaleType(ImageView.ScaleType.CENTER_CROP);
         holder.img.setImageResource(mDataset.get(position).getImage_ID());
+
+        holder.img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, mDataset.get(position).getImage_title(), Toast.LENGTH_SHORT).show();
+            }
+        });
         //holder.mImageView.setImageURI(Uri.parse(mDataset.get(position)));
     }
 
