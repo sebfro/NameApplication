@@ -20,7 +20,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     private Context context;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView mTextView;
         public ImageView img;
         public ViewHolder(View v) {
             super(v);
