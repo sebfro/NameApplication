@@ -15,7 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playGame(View view){
-
+        Intent i = getIntent();
+        finish();
+        Intent intent = new Intent(this, learningMode.class);
+        startActivity(intent);
     }
 
     public void addImage(View view){
